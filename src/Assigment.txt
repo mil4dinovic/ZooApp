@@ -1,0 +1,22 @@
+Napisati Java program na osnovu sledećeg teksta: 
+Potrebno je napraviti informacioni sistem koji podržava rad zoološkog vrta.
+Za svaki zoo vrt se pamti naziv, adresa i grad.
+Naziv zoo vrta mora počinjati velikim slovom, posle kog mora biti malo slovo i mora imati minimum 5 karaktera (npr. Veseli zoo vrt).
+Svaki zoo vrt ima vlasnika za kog se pamti jmbg (mora sadržati tačno 13 cifara), ime, prezime, pol (muško/žensko) i broj godina (mora imate više od 18 godina).
+Zoo vrt vodi evidenciju o životinjama koje se nalaze u njemu.
+Za svaku životinju je poznat latinski naziv, lokalni naziv i starost (broj godina koji ne sme biti manji od 0).
+Sve životinje iz zoo vrta se mogu podeliti u tri velike grupe: ptice, sisare i gmizavce. 
+O pticama se još pamti trajanje leta i tip ptice (pevačica, grabljivica, plivačica, trkačica).
+Za sisare se pamti tip ishrane (biljojed, mesojed, staštojed) i da li je pitom.
+Dok se za gmizavce pamti da li je otvoran, kao i optimalna temperatura tela u stepenima.
+Ptice možemo porediti trajanju leta.
+Gmizavac koji je otrovan je veći od neotrovnog, a ukoliko su oba otrovna ili oba neotrovna, porede se po optimalnoj temperaturi tela.
+Kako bismo omogućili uvid u različite vrste životinja koje se čuvaju u zoo vrtu potrebno je implementirati sledeće metode:
+• Metod koji vraća sve ptice pevačice, sortirane po trajanju leta tako da ona koja ima najduže trajanje leta bude na prvom mestu.
+• Metod koji računa prosečnu tempreraturu tela svih otrovnih gmizavaca, koju je neophodno testirati sa minium 3 JUnit testa.
+Kako bi se zapamtila lista svih životinja iz zoo vrta potrebno je sačuvati ih u datoteku zoo_vrt.txt u sledećem formatu:
+Naziv zoo vrta - adresa - grad - vlasnik
+Latinski naziv - lokalni naziv - starost
+Tip ptice, trajanje leta  / tip ishrane, da li je pitom / da li je otrovan, optimalna temp.
+(ukoliko je ptica / ukoliko je sisar / ukoliko je gmizavac)
+U pokretačkoj klasi Main u okviru statičke metode main demonstrirati sve elemente koje ste implementirali.
