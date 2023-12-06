@@ -33,13 +33,19 @@ public class Owner {
         return name;
     }
     public void setName(String name) {
+        if (!name.matches("[a-zA-Z]+")) {
+            throw new IllegalArgumentException("Name can only contain letters.");
+        }
         this.name = name;
     }
     public String getSurname() {
         return surname;
     }
     public void setSurname(String surname) {
-        this.surname = this.surname;
+        if (!name.matches("[a-zA-Z]+")) {
+            throw new IllegalArgumentException("Surname can only contain letters.");
+        }
+        this.surname = surname;
     }
     public Sex getSex() {
         return sex;
@@ -59,7 +65,7 @@ public class Owner {
     }
     @Override
     public String toString(){
-        return "Vlasnik{ " + jmbg + ", ime=" + name + ", prezime = " + surname + sex + age + "ajde ajde legendo";
+        return "Vlasnik { jmbg " + jmbg;
     }
 
 }

@@ -7,7 +7,10 @@ public class Zoo {
 
     public Zoo(){
     }
-    public Zoo(String name, String address, String city){
+    public Zoo(String name, String address, String city) throws InvalidDataException {
+        setName(name);
+        setAddress(address);
+        setCity(city);
 
     }
     public String getName(){
@@ -19,9 +22,20 @@ public class Zoo {
                 && Character.isLowerCase(name.charAt(1))) {
                     this.name = name;
         } else {
-                    throw new InvalidDataException("Name not valid");
+                    throw new InvalidDataException("Name is not valid");
         }
-
+    }
+    public String getAddress(){
+        return address;
+    }
+    public void setAddress(String address){
+        this.address = this.address;
+    }
+    public String getCity(){
+        return city;
+    }
+    public void setCity(String city){
+        this.city = this.city;
     }
 
 }
