@@ -4,7 +4,11 @@ public abstract class Animal {
     private int age;
 
     public Animal() {
-
+    }
+    public Animal(String latinName, String localName, int age){
+        setLatinName(latinName);
+        setLocalName(localName);
+        setAge(age);
     }
     public String getLatinName() {
         return latinName;
@@ -32,4 +36,8 @@ public abstract class Animal {
         return "Zivotinje " + latinName;
 
     }
+
+    public abstract String tostring();
+
+    public abstract int compareTo(Bird bird);
 }
