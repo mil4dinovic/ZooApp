@@ -1,9 +1,14 @@
 import exceptions.InvalidDataException;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Zoo {
     private String name;
     private String address;
     private String city;
+    private Owner owner;
+    private List<Animal> animalList = new ArrayList<>();
 
     public Zoo(){
     }
@@ -35,7 +40,10 @@ public class Zoo {
         return city;
     }
     public void setCity(String city){
-        this.city = this.city;
+        this.city = city;
+    }
+    public Owner getOwner(){
+        return owner;
     }
 
 }
