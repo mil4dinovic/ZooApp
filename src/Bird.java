@@ -1,9 +1,9 @@
 import enums.BirdType;
 
-public class Bird extends Animal{
+public class Bird extends Animal implements Comparable<Bird>{
     private BirdType birdType;
     private double durationFlight;
-    public Bird(BirdType birdType, double durationFlight, String latinName, String localName, int age){
+    public Bird(String latinName, String localName, int age, BirdType birdType, double durationFlight){
         super(latinName,localName,age);
         this.birdType = birdType;
         this.durationFlight = durationFlight;
@@ -22,7 +22,7 @@ public class Bird extends Animal{
         this.durationFlight = durationFlight;
     }
     @Override
-    public String tostring(){
+    public String toString(){
         return "Ptica je ova legendarna";
     }
     @Override

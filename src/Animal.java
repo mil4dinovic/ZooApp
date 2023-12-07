@@ -37,7 +37,4 @@ public abstract class Animal {
 
     }
 
-    public abstract String tostring();
-
-    public abstract int compareTo(Bird bird);
 }
